@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Cryptid Sightings</title>
+    <link rel="stylesheet" type="text/css" href="style/form.css">
+    <link type="text/css" href="jquery-ui-1.8.16.custom/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="ui-widget-header ui-corner-top form_pad">
+        <h2>View Cryptid Sightings</h2>
+    </div>
+    <div class="ui-widget-content form_pad">
+        <div id="map"></div>
+        <div id="sight_nav">
+            <!-- menu desplegable para seleccionar el criptido -->
+            <select id="ddlTypes">
+                <option value="">-- Please Select --</option>
+            </select>
+            <ul id="sight_list"></ul>
+        </div>
+    </div>
+
+    <script src="scripts/jquery-1.6.2.min.js"></script>
+    <script src="scripts/maps.js"></script>
+    <!-- URL de la API de Google Maps, extraido de https://github.com/soydalto/Google-Maps-API-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</body>
+
+</html>
